@@ -29,7 +29,7 @@
   <div class="reveal">
     <div class="slides">
       <!--<section data-background-image="img/back_snake.png">-->
-      <section>
+      <section data-transition="fade-in fade-out" data-background-image="img/back_snake.png">
         <div id="left70">
           <h3><i class="qt-lemon">Python internals</i>:
             tips to understand better the <i class="qt-violet">current</i>
@@ -49,7 +49,8 @@
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h2>Understanding how things work</h2>
+        <h2 class="r-fit-text">Understanding</h2>
+        <h2 class="r-fit-text">how <i class="qt-lemon">things</i> work</h2>
       </section>
 
       <section data-transition="fade-in fade-out">
@@ -61,18 +62,22 @@
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h2>Programming languages</h2>
+        <h2 class="r-fit-text">Programming languages</h2>
+      </section>
+
+      <section data-background-video="programming_languages.mp4"
+               data-background-video-loop data-background-video-muted>
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h2>C</h2>
-        <h3 class="fragment">B</h3>
-        <h3 class="fragment">Assembly</h3>
+        <h2 class="r-fit-text">The <i class="qt-lemon">C</i> programming language</h2>
+        <h4 class="fragment">Fortran*, BCPL+SMALGOL -> <i class="qt-violet">B</i></h4>
+        <h4 class="fragment">Assembly, NB -> <i class="qt-violet">C</i></h4>
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h3>But we are here to talk about</h3>
-        <h2>Python</h2>
+        <h3 class="r-fit-text">But we are here to talk about</h3>
+        <h2 class="r-fit-text">Python</h2>
       </section>
 
       <section data-transition="fade-in fade-out">
@@ -86,13 +91,13 @@
                    INSERT word IN collection
           RETURN collection
         </code></pre>
-        <p class="fragment" data-fragment-index="2">ABC Programming language </p>
+        <p style="font-size: 80%;" class="fragment" data-fragment-index="2"><i class="qt-lemon">ABC Programming language</i></p>
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h3>Python Implementation</h3>
-        <h4><i class="qt-violet fragment">but wait...</i></h4>
-        <h3 class="fragment">What is <i class="qt-lemon">that</i> Python?</h3>
+        <h3>Python's Implementation</h3>
+        <h4><i class="qt-violet fragment">wait...</i></h4>
+        <h3 class="fragment"><i class="qt-lemon">Which</i> Python?</h3>
       </section>
 
       <section data-transition="fade-in fade-out">
@@ -104,8 +109,8 @@
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h1>OK then.</h1>
-        <h2>Python is written in C<span class="fragment">...right?</span></h2>
+          <h1><i class="qt-lemon">OK then</i></h1>
+          <h2>Python is written in C<span class="fragment"><i class="qt-violet">...right?</i></span></h2>
       </section>
 
       <section data-transition="fade-in fade-out">
@@ -113,43 +118,40 @@
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h1>Core building blocks are in C</h1>
-        <h2>What about the ecosystem?</h2>
+        <h1 class="r-fit-text">Main <i class="qt-lemon">building blocks</i> are in C</h1>
+        <p class="fragment">What about the <i class="qt-violet">ecosystem</i>?</p>
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h2>Current popular modules</h2>
+        <h2>You probably heard of...</h2>
       </section>
 
       <section data-transition="fade-in fade-out" data-background-color="rgb(38, 18, 48)">
-        <h2>Pydantic</h2>
+        <img style="width: 90%" src="img/github_pydantic.png"/>
       </section>
 
       <section data-transition="fade-in fade-out" data-background-color="rgb(17, 14, 83)">
-        <h2>PyTorch</h2>
+        <img style="width: 90%" src="img/github_pytorch.png"/>
       </section>
 
       <section data-transition="fade-in fade-out" data-background-color="rgb(320, 237, 29)">
-        <h2>uv</h2>
+        <img style="width: 90%" src="img/github_duckdb.png"/>
       </section>
 
-      <section data-transition="fade-in fade-out" data-background-color="rgb(17, 17, 17)">
-        <h2>DuckDB</h2>
+      <section data-transition="fade-in fade-out" data-background-color="rgb(38, 18, 48)">
+        <img style="width: 90%" src="img/github_uv.png"/>
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h3 class="r-fit-text">I want <i class="qt-lemon">you</i> to</h3>
+        <h3 class="r-fit-text">My goal is for <i class="qt-lemon">you</i> to</h3>
         <h3 class="r-fit-text"><i class="qt-neon">re-discover</i> Python</h3>
       </section>
 
       <!-- print("hello") -->
 
       <section data-transition="fade-in fade-out">
-        <h3>How does Python works?</h3>
-      </section>
-
-      <section data-transition="fade-in fade-out">
-        <h3>How does <i class="qt-lemon">C</i>Python works?</h3>
+        <h3 class="r-fit-text">How does <i class="qt-violet">Python</i> works?</h3>
+        <h3 class="r-fit-text fragment">How does <i class="qt-lemon">C</i><i class="qt-violet">Python</i> works?</h3>
       </section>
 
       <section data-transition="fade-in fade-out">
@@ -157,7 +159,7 @@
       </section>
 
       <section data-transition="fade-in fade-out">
-        Actually....Flow Graph
+        <img style="width: 90%;" src="img/python_diagram_2.png" />
       </section>
 
       <section data-transition="fade-in fade-out">
@@ -685,12 +687,18 @@
         <h2 class="r-fit-text"><i class="red">Hard</i> and <i class="qt-neon">Easy</i></h2>
       </section>
 
+      <section data-transition="fade-in fade-out" data-background-image="img/rocks.webp">
+          <h2>Let's breathe</h2>
+      </section>
+
+
       <section data-transition="fade-in fade-out">
-        <h3>But <i class="qt-lemon">don't worry</i></h3>
+          <h3 class="r-fit-text">This might have sound <i class="red">complicated</i></h3>
+          <h3 class="r-fit-text">but <i class="qt-lemon">don't worry</i></h3>
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h3 class="r-fit-text">The CPython API</h3>
+        <h3 class="r-fit-text">The C-API API</h3>
         <h3 class="r-fit-text"><i class="qt-neon">helps you</i> a lot</h3>
       </section>
 
@@ -772,7 +780,7 @@
         <h3>list.append (1/2)</h3>
         <pre style="font-size: 50%;width: 90%;"><code class="c" data-trim data-noescape>
         static PyObject *
-        list_append(PyListObject *self, PyObject *object)
+        list_append_impl(PyListObject *self, PyObject *object)
         {
             if (_PyList_AppendTakeRef(self, Py_NewRef(object)) < 0) {
                 return NULL;
@@ -794,11 +802,13 @@
                 Py_DECREF(newitem);
                 return -1;
             }
-            PyList_SET_ITEM(self, len, newitem);
+            //PyList_SET_ITEM(self, len, newitem);
+            FT_ATOMIC_STORE_PTR_RELEASE(self->ob_item[len], newitem);
             return 0;
         }
         </code></pre>
       </section>
+
 
       <section data-transition="fade-in fade-out">
         <h3>CPython objects lifecycle (1/219)</h3>
@@ -917,7 +927,7 @@ fn pyberlin(_py: Python, m: &PyModule) -> PyResult<()> {
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h3 class="r-fit-text fragment">that's an example...</h3>
+        <h3 class="r-fit-text">that's an example...</h3>
         <h1 class="r-fit-text fragment">any <i class="qt-neon">real projects</i>?</h1>
       </section>
 
@@ -1029,12 +1039,7 @@ fn pyberlin(_py: Python, m: &PyModule) -> PyResult<()> {
       </section>
 
       <section data-transition="fade-in fade-out">
-        <h3 class="r-fit-text">What can Python <i class="qt-neon">do</i></h3>
-        <h3 class="r-fit-text">for the <i class="qt-lemon">your</i> community?</h3>
-      </section>
-
-      <section data-transition="fade-in fade-out">
-        <h3 class="r-fit-text">What can <i class="qt-neon">you</i></h3>
+        <h3 class="r-fit-text">Now, <i class="qt-neon">you</i> have</h3>
         <h3 class="r-fit-text">do for <i class="qt-lemon">Python</i>?</h3>
       </section>
 
@@ -1072,6 +1077,7 @@ fn pyberlin(_py: Python, m: &PyModule) -> PyResult<()> {
     Reveal.initialize({
       hash: true,
       transitionSpeed: 'fast',
+      autoPlayMedia: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
